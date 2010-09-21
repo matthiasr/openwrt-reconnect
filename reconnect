@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ ${QUERY_STRING} = 'go' ]; then
+	echo "Content-Type: text/plain"
+	echo ""
+	echo -n "Reconnecting..."
+	ifup wan && echo "OK." || echo "Error."
+	sleep 3
+	ifconfig ppp0 | grep -F "addr"
+else
+	cat <<EOF
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html><head><title>Simple Reconnector</title><head>
+<body><h1><a href="?go">Reconnect</a></h1></body></html>
+
+EOF
+fi
