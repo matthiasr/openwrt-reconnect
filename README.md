@@ -13,7 +13,7 @@ Download [reconnect](http://github.com/matthiasr/openwrt-reconnect/raw/master/re
 HOWTO Use
 ---
 
-Open (http://192.168.1.1/cgi-bin/reconnect) and click *Reconnect* (substitute your router's IP if appropriate). Your WAN Connection will be torn down and re-established.
+Open [http://192.168.1.1/cgi-bin/reconnect](http://192.168.1.1/cgi-bin/reconnect) and click *Reconnect* (substitute your router's IP if appropriate). Your WAN Connection will be torn down and re-established.
 
 License
 ---
